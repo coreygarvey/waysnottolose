@@ -1,0 +1,97 @@
+@charset "utf-8";
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #FFF;
+}
+/* CSS Document */
+
+#container {
+	width: 350px;
+	background: #FFF;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+	float: right;
+}
+#container h1 {
+	position: absolute;
+	top: -500px;
+}
+
+#main_menu {
+	position: relative;
+	background-color: #0071BC;
+	width: 968px;
+	height: 100px;
+}
+#sub_menu {
+	position: absolute;
+	top: 70px;
+	left: 50px;
+}
+#header_text {
+	background-color: #0071BC;
+	width: 35px;
+	line-height: 1;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	position: absolute;
+	float: left;
+	overflow: visible;
+	top: 5px;
+	padding: 5px;
+}
+#header_text p{
+	font-size: 12px;
+	margin: 0 auto;
+	color: #FFF;
+}
+#logo_text {
+	background-color: #0071BC;
+	width: 81px;
+	position: absolute;
+	overflow: visible;
+	top: 0px;
+	padding: 0px;
+	right: 5px;
+	line-height: 1;
+	font-family: "Stick Tickle";
+}
+#logo_text p{
+	font-size: 38px;
+	margin: 0 auto;
+	color: #FFF;
+}
+#logo_text p1{
+	font-size: 12px;
+	margin: 0 auto;
+	color: #FFF;
+}
+#header {
+	background-color: #FFF;
+	color: #0071BC;
+	font-size: 48px;
+	width: 978px;
+	height: 100px;
+	position: relative;
+	float: left;
+	font-family: "Stick Tickle";
+	margin-left: 10px;
+}
+#think_and_wonder {
+	width: 978px;
+}
+#think_and_wonder_copy {
+	width: 250px;
+	height: 35px;
+	float: right;
+	position: relative;
+	
+}
+.main_image {
+	clear: left;
+	float: left;
+	margin-left: 5px;
+	padding-top: 5px;
+}

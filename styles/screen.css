@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/* Ways Not to Lose - Version 1
+	'My whole Saturday, and Sunday too,
+	I was thinking about ways not to lose.
+	Lay down my weapons, is what I've done,
+	Too late too hide, feet too soft to run.' -Wood Brothers
+ */
+
+/*
+ * -----Basic information-----*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #FFF url(../images/gradient.png) repeat-x  top ;	
+	font-size: 15px;
+	text-align: left;
+	line-height: 1;
+	height: 100%;
+}
+p  {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+}
+bold	{
+	font-weight: bold;
+}
+
+
+/*
+ * -----Titles-----*/
+h1 {
+	width: 630px;
+	margin: -3px 0 0 0;
+	padding: ;
+	font-size: 38px;
+	font-weight: normal;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	line-height: 57px;
+	text-align: center;
+}
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active{
+	color: #000;
+	text-decoration: none;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-weight: normal;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;;
+	color: #000;
+	text-align: center;
+	line-height: 27px;
+}
+h2 a:link, h2 a:visited, h2 a:hover, h2 a:active {
+	color: #000;
+	text-decoration: none;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+h3 a:link, h3 a:visited, h3 a:hover, h3 a:active {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #000;
+}
+
+
+/*
+ * -----Layout----*/
+
+#container {
+	position: relative;
+	background: transparent;
+	width: 940px;
+	margin: 0 auto 0 auto;
+	padding: 0 20px 30px 20px;
+	text-align: left;
+}
+#grid{
+	position: relative;
+	width: 687px;
+	height: 471px;
+	margin: 35px 106.5px 15px 106.5px;
+	padding: 0;
+	background: transparent;
+	text-align: left;
+	
+}
+#border {
+	width: 800px;
+	height: 58px;
+	background-color: transparent;
+	margin: 35px 50px 0;
+}
+#main {
+	position: relative;
+	width: 680px;
+	margin: 15px 130px 25px;
+	padding: 1px 0 0px 0;
+	overflow: hidden;
+	height:100%;
+}
+
+
+/*
+ * -----Header-----*/
+#title{
+	font-weight: bold;
+	background-color: transparent;
+	line-height: 27px;
+	color: #FFF;
+	font-size: 26px;
+	top: 350px;
+}
+#contact a:link, #contact a:visited, #contact a:hover, #contact a:active {
+  	text-decoration:  none;
+  	font-weight:  bold;
+	color:  #0044aa;
+	float: left;
+	margin: 0 50px;
+}
+#about a:link, #about a:visited, #about a:hover, #about a:active {
+  	text-decoration:  none;
+  	font-weight:  bold;
+	color:  #0044aa;
+	float: right;
+	margin: 0 50px;	
+}
+#homepage {
+	background-color: transparent;
+	line-height: 1;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	position: relative;
+	float: left;
+	overflow: visible;
+	top: 25px;
+	margin: 0 310px;
+	font-size: 38px;
+	z-index: 1;
+}
+#homepage a:link, #homepage a:visited, #homepage a:hover, #homepage a:active    {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #FFF; 
+}
+
+/*---Logo needs to be improved so it is all the way to the right upon scrolling right, doesn't look good when the window is narrow---*/
+#logo {
+	background-color: transparent;
+	width: 81px;
+	position: relative;
+	overflow: visible;
+	padding: 0px;
+	float: right;
+	top: 35px;
+	right: 130px;	
+	line-height: 1;
+	z-index: 1;
+}
+#main_menu {
+	position: relative;
+	height: 100px;
+	width: 687px;
+	top: 20px;
+	margin: 0 106.5px;
+}
+#sub_menu {
+	position: relative;
+	top: 40px;
+	font-variant: small-caps;
+	float: left;
+}
+#about_menu {
+	position: relative;
+	top: 40px;
+	font-variant: small-caps;
+	float: right;
+}
+#click{
+	position: absolute;
+	top: 210px;
+	left: 50px;
+}
+#current_page {
+	background-color: transparent;
+	line-height: 1;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	position: relative;
+	overflow: visible;
+	padding: 0px;
+}
+#current_page h1{
+	font-size: 48px;
+	color: #0044aa;
+  	font-weight: bold;
+  	font-variant: small-caps;
+  	text-align:center;
+	margin: 0 auto;
+}
+
+/*
+ * -----Images-----*/
+.{
+	
+}
+.b{
+	margin: 0;
+	padding: 30px 20px 15px;
+}
+.c{
+	margin: 0;
+	padding: 10px 60px;
+}
+.d{
+	padding: 30px 60px 15px;
+}
+.e{
+	margin: 0;
+	padding: 10px 137px
+}
+.f{
+	padding: 15px 98px;
+}
+.g{
+	padding: 15px 0px;
+}
+.h{
+	padding: 30px 80px 15px;
+}
+
+/*
+ * -----Grid-----*/
+
+#first_image, #third_image {
+	background-repeat: no-repeat;
+	position: relative;
+	float: left;
+}
+#second_image, #fourth_image {
+	background-repeat: no-repeat;
+	position: relative;
+	float: right;
+}
+#first_image, #second_image{
+	margin-bottom: 25px;
+}
+
+.startups{
+	border: 3px solid #FFFF00;
+}
+.travel{
+	border: 3px solid #FF0000;
+}
+.videos{
+	border: 3px solid #0000FF;
+}
+.givingback{
+	border: 3px solid #00FF00;
+}
+
+/*
+ * -----Story-----*/
+.buttons {
+	float: right;
+	margin: 2px 185px 0 0;
+	padding: 0;
+	vertical-align: super;
+	}
+.story  {
+	width: 630px;
+	margin: 0;
+	padding: 5px 20px;
+	float:left;
+}
+.story_text a:link, .story_text a:visited, .story_text a:hover, .story_text a:active    {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #0044aa; 
+}
+.about-text  {
+	width: 500px;
+	margin: 0;
+	padding: 5px 23px;
+	float:left;
+}
+.about-text a:link, .about-text a:visited, .about-text a:hover, .about-text a:active    {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #0044aa; 
+}
+.about-text h1 {
+	width: 500px;
+	margin: -3px 0 0 0;
+	padding: 0;
+	font-size: 28px;
+	font-weight: normal;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;;
+	color: #000;
+	text-transform: uppercase;
+	line-height: 37px;
+	text-align: center;
+}
+.extras {
+	margin: 16px 0 16px 0;
+	padding: 10px 0 5px 0;
+	height: 30px;
+	color: #000;
+	background-color: transparent;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-top: 2px dotted #000;
+	border-bottom: 3px dotted #000;
+	clear: both;
+}
+.extras a:link, .extras a:visited, .extras a:hover, .extras a:active    {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #0044aa; 
+}
+
+
+#left_column {
+	position:relative;
+	margin-left:60px;
+}
+#left_column, #center_column, #right_column {
+	width: 316px;
+	float:left;
+}
+#center_column, #right_column {
+	margin-left: 5px;
+	
+
+#container h4 {
+	position: absolute;
+	top: -500px;
+}
+
+	
